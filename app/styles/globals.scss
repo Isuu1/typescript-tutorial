@@ -12,6 +12,21 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+button {
+  padding: 0.7rem 0.9rem;
+  border-radius: 17px;
+  border: 0;
+  background: #242636;
+  color: #fff;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
 // h1,
 // h2,
 // h3,
@@ -21,9 +36,17 @@ body {
 //   margin: 1rem 0;
 // }
 
+.headline {
+  margin: 1rem 0;
+}
+
 .page {
   padding: 3rem;
   min-height: 100vh;
   line-height: 1.7rem;
   list-style-position: inside;
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
 }

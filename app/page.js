@@ -4,7 +4,7 @@ import SectionContainer from "./components/SectionContainer/SectionContainer";
 export default function Home() {
   return (
     <main className={`page ${styles.home}`}>
-      <h2>Welcome to Typescript tutorial</h2>
+      <h2 className="headline">Welcome to Typescript tutorial</h2>
       <p>
         TypeScript is typed JavaScript. TypeScript adds types to
         JavaScript to help you speed up the development by catching
@@ -15,7 +15,9 @@ export default function Home() {
         on top of JavaScript. It works on any web browser, any OS, and
         any environment that JavaScript runs.
       </p>
-      <h3>In this TypeScript tutorial, you’ll learn:</h3>
+      <h3 className="headline">
+        In this TypeScript tutorial, you’ll learn:
+      </h3>
       <ul>
         <li>
           Why TypeScript offers a lot of benefits over vanilla
@@ -30,7 +32,7 @@ export default function Home() {
           Interfaces, Modules, and more.
         </li>
       </ul>
-      <h3>Prerequisites</h3>
+      <h3 className="headline">Prerequisites</h3>
       <ul>
         <li>
           Basic JavaScript knowledge. If you want to learn JavaScript,
@@ -39,10 +41,13 @@ export default function Home() {
         <li>ECMAScript 2015 or ES6 knowledge.</li>
       </ul>
       <div className={styles.home__sections}>
-        <SectionContainer title="Section 1 - Getting started">
+        <SectionContainer
+          title="Section 1 - Getting started"
+          section={1}
+        >
           <ul>
             <li>Why Typescript and what it is</li>
-            <li>Typescript advantages</li>
+            <li>Typescript advantages over Javascript</li>
             <li>Setting environment</li>
           </ul>
         </SectionContainer>
