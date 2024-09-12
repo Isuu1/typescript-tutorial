@@ -1,0 +1,9 @@
+.sectionContainer {
+  background: #242636;
+  padding: 1rem;
+  border-radius: 20px;
+  transition: all 0.3s;
+}
+.sectionContainer:hover {
+  box-shadow: 0 0 20px -10px #beb8f3;
+}/*# sourceMappingURL=SectionContainer.module.css.map */

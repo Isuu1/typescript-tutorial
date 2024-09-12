@@ -1,95 +1,52 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import styles from "@/app/Home.module.scss";
+import SectionContainer from "./components/SectionContainer/SectionContainer";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>app/page.js</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+    <main className={`page ${styles.home}`}>
+      <h2>Welcome to Typescript tutorial</h2>
+      <p>
+        TypeScript is typed JavaScript. TypeScript adds types to
+        JavaScript to help you speed up the development by catching
+        errors before you even run the JavaScript code.
+      </p>
+      <p>
+        TypeScript is an open-source programming language that builds
+        on top of JavaScript. It works on any web browser, any OS, and
+        any environment that JavaScript runs.
+      </p>
+      <h3>In this TypeScript tutorial, you’ll learn:</h3>
+      <ul>
+        <li>
+          Why TypeScript offers a lot of benefits over vanilla
+          JavaScript.
+        </li>
+        <li>
+          Understand what TypeScript truly is and how it works under
+          the hood.
+        </li>
+        <li>
+          Use TypeScript and its rich features like Types, Classes,
+          Interfaces, Modules, and more.
+        </li>
+      </ul>
+      <h3>Prerequisites</h3>
+      <ul>
+        <li>
+          Basic JavaScript knowledge. If you want to learn JavaScript,
+          check out the JavaScript Tutorial.
+        </li>
+        <li>ECMAScript 2015 or ES6 knowledge.</li>
+      </ul>
+      <div className={styles.home__sections}>
+        <SectionContainer title="Section 1 - Getting started">
+          <ul>
+            <li>Why Typescript and what it is</li>
+            <li>Typescript advantages</li>
+            <li>Setting environment</li>
+          </ul>
+        </SectionContainer>
+      </div>
+    </main>
   );
 }
