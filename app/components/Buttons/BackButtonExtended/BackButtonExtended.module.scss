@@ -1,0 +1,13 @@
+.backButtonExtended {
+  margin-top: 1rem;
+  width: 50%;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  &__nav {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+}

@@ -18,3 +18,15 @@
     padding: 3rem;
   }
 }
+
+@media screen and (min-width: "1200px") {
+  .footer {
+    padding: 1rem 6rem;
+  }
+}
+
+@media screen and (min-width: "1400px") {
+  .footer {
+    padding: 1rem 14rem;
+  }
+}

@@ -11,7 +11,12 @@ const BackButton = () => {
   const pathname = usePathname();
 
   return (
-    <button className="flex-center" onClick={() => router.back()}>
+    <button
+      className="flex-center"
+      onClick={() =>
+        pathname === "/section-1" ? router.push("/") : router.back()
+      }
+    >
       <FaArrowLeft />
       {pathname === "/section-1"
         ? "Back to home"

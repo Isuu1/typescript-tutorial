@@ -6,6 +6,7 @@ import { darcula } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import NextButtonExtended from "../components/Buttons/NextButtonExtended/NextButtonExtended";
 
 import { sectionsData } from "../sectionsData";
+import BackButtonExtended from "../components/Buttons/BackButtonExtended/BackButtonExtended";
 
 const codeString1 = `let score: number = 95.5;         // A number value
 let isAvailable: boolean = false; // A boolean value
@@ -153,10 +154,16 @@ export default function Section() {
       >
         {codeString4}
       </SyntaxHighlighter>
-      <NextButtonExtended
-        sectionId={3}
-        nextSectionTitle={sectionsData[2].sectionTitle}
-      />
+      <div className="section-bottom-nav">
+        <BackButtonExtended
+          sectionId={1}
+          previousSectionTitle={sectionsData[1].sectionTitle}
+        />
+        <NextButtonExtended
+          sectionId={3}
+          nextSectionTitle={sectionsData[2].sectionTitle}
+        />
+      </div>
     </div>
   );
 }
