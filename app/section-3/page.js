@@ -4,6 +4,7 @@ import BackButton from "../components/Buttons/BackButton/BackButton";
 import NextButton from "../components/Buttons/NextButton/NextButton";
 
 import { sectionsData } from "../sectionsData";
+import BackButtonExtended from "../components/Buttons/BackButtonExtended/BackButtonExtended";
 
 const codeString1 = `function greet(name: string): string {
     return "Hello, \${name}!";
@@ -281,6 +282,13 @@ export default function Section() {
         dive deeper into how to define complex types for objects and
         functions using interfaces and type aliases.
       </p>
+      <div className="section-bottom-nav">
+        <BackButtonExtended
+          sectionId={2}
+          previousSectionTitle={sectionsData[2].sectionTitle}
+        />
+        <div style={{ marginRight: "auto", width: "50%" }}></div>
+      </div>
     </div>
   );
 }
