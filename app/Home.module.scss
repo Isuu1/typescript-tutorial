@@ -1,5 +1,7 @@
 .home {
   &__sections {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 1rem;
   }
 }
