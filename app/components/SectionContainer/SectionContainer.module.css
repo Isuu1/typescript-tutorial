@@ -1,9 +1,12 @@
 .sectionContainer {
-  background: #242636;
+  background: linear-gradient(270deg, #912a92, #18183e);
+  background-size: 400% 400%;
+  animation: AnimateBackground 30s ease infinite;
   padding: 1rem;
   border-radius: 20px;
   transition: all 0.3s;
   margin: 2rem 0;
+  flex: 1 1 50%;
 }
 .sectionContainer:hover {
   box-shadow: 0 0 20px -10px #beb8f3;
@@ -13,4 +16,15 @@
 }
 .sectionContainer__button {
   background: #1e1e2c;
+}
+@keyframes AnimateBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }/*# sourceMappingURL=SectionContainer.module.css.map */

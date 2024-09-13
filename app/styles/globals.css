@@ -26,17 +26,43 @@ button {
   cursor: pointer;
 }
 
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
 .headline {
   margin: 1rem 0;
+}
+
+.important {
+  color: rgb(255, 255, 255);
+  padding: 0.2rem;
+  background: #741d1d;
+  font-weight: bold;
+}
+
+.error {
+  padding: 0.4rem;
+  background: #492828;
+  border-width: 2px 0 2px 0;
+  border-style: solid;
+  border-color: #af2c2c;
+}
+
+.section {
+  line-height: 2.2rem !important;
 }
 
 .page {
   padding: 3rem;
   min-height: 100vh;
-  line-height: 1.7rem;
+  line-height: 2.2rem;
   list-style-position: inside;
 }
 .page__header {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 2rem;
 }/*# sourceMappingURL=globals.css.map */

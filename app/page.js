@@ -51,6 +51,16 @@ export default function Home() {
             <li>Setting environment</li>
           </ul>
         </SectionContainer>
+        <SectionContainer
+          title="Section 2 - Variables and Type Annotations in TypeScript"
+          section={2}
+        >
+          <ul>
+            <li>Declaring Variables with Type Annotations</li>
+            <li>Basic Types in TypeScript</li>
+            <li>Union Types</li>
+          </ul>
+        </SectionContainer>
       </div>
     </main>
   );
