@@ -8,4 +8,8 @@ export const sectionsData = [
     sectionTitle:
       "Section 2 - Variables and Type Annotations in TypeScript",
   },
+  {
+    sectionId: 3,
+    sectionTitle: "Section 3 - Functions in TypeScript",
+  },
 ];

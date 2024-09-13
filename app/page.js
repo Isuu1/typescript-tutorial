@@ -63,6 +63,17 @@ export default function Home() {
             <li>Union Types</li>
           </ul>
         </SectionContainer>
+        <SectionContainer
+          title={sectionsData[2].sectionTitle}
+          sectionId={sectionsData[2].sectionId}
+        >
+          <ul>
+            <li>Function Declaration with Type Annotations</li>
+            <li>Function Types (Type Aliases for Functions)</li>
+            <li>Rest Parameters</li>
+            <li>Arrow Functions</li>
+          </ul>
+        </SectionContainer>
       </div>
     </main>
   );
