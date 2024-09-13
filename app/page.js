@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <main className={`page ${styles.home}`}>
       <h3 className="error">
-        Please not this project is still in development
+        Please note this project is still in development
       </h3>
 
       <h2 className="headline">Welcome to Typescript tutorial</h2>
