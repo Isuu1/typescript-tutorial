@@ -1,10 +1,10 @@
-// "use client";
 import Link from "next/link";
 import BackButton from "../components/Buttons/BackButton/BackButton";
 import NextButton from "../components/Buttons/NextButton/NextButton";
 
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { darcula } from "react-syntax-highlighter/dist/esm/styles/hljs";
+import CodePlayground from "../components/CodePlayground/CodePlayground";
 
 const codeString1 = `let name = Batman;
 name = Chris; 
@@ -116,14 +116,15 @@ export default function Section() {
       <p>
         And then if you want to assign it to different type of
         variable
-        <SyntaxHighlighter
-          className="wrap-white-space"
-          language="javascript"
-          style={darcula}
-        >
-          {codeString4}
-        </SyntaxHighlighter>
       </p>
+      <SyntaxHighlighter
+        className="wrap-white-space"
+        language="javascript"
+        style={darcula}
+      >
+        {codeString4}
+      </SyntaxHighlighter>
+
       <p>you will see the error</p>
       <span className="error">
         Type `number` is not assignable to type `string`.(2322)
@@ -150,6 +151,8 @@ export default function Section() {
           </Link>
         </p>
       </section>
+      <h2>Check different types in playgroud below. Have fun!</h2>
+      <CodePlayground />
       <NextButton />
     </div>
   );
