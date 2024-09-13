@@ -1,0 +1,20 @@
+.footer {
+  background: #242636;
+  padding: 1rem;
+  line-height: 2rem;
+
+  &__socials {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    &__icon {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@media screen and (min-width: "768px") {
+  .footer {
+    padding: 3rem;
+  }
+}
