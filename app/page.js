@@ -7,6 +7,10 @@ export default function Home() {
   console.log("Sections data", sectionsData.length);
   return (
     <main className={`page ${styles.home}`}>
+      <h3 className="error">
+        Please not this project is still in development
+      </h3>
+
       <h2 className="headline">Welcome to Typescript tutorial</h2>
       <p>
         TypeScript is typed JavaScript. TypeScript adds types to

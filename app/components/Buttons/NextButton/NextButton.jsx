@@ -11,9 +11,6 @@ const NextButton = ({ sectionId }) => {
   //Use router to change URL for next section on button click
   const router = useRouter();
 
-  const currentSessionId = sectionId - 1;
-  console.log(currentSessionId);
-
   return (
     <button
       className="flex-center"
