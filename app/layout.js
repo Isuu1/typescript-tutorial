@@ -3,7 +3,7 @@ import Header from "@/app/components/Header/Header";
 import Footer from "./components/Footer/Footer";
 
 export const metadata = {
-  title: "Typescript Tutorial ny Jakub B.",
+  title: "Typescript Tutorial by Jakub B.",
   description: "Boost your application security with Typescript",
 };
 
