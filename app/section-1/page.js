@@ -63,17 +63,17 @@ export default function Section() {
       <p>
         In this example, the first statement defines the variable
         without assigning a value. Its type is
-        <span className="important">undefined.</span>
+        <span className="highlighted">undefined.</span>
       </p>
       <p>
         Then, we assign `Hello` to name variable and show its type.
         The type of the name variable now changes to{" "}
-        <span className="important">string.</span>
+        <span className="highlighted">string.</span>
       </p>
       <p>
         Finally, we assign 100 to the name variable. This time, the
         type of the name variable changes to{" "}
-        <span className="important">number.</span>
+        <span className="highlighted">number.</span>
       </p>
       <p>
         As you can see, as soon as the value is assigned, the type of

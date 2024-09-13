@@ -55,6 +55,13 @@ button:hover {
   font-weight: bold;
 }
 
+.highlighted {
+  padding: 0.2rem;
+  background: #ffffff;
+  color: #000;
+  font-weight: bold;
+}
+
 .error {
   padding: 0.4rem;
   background: #492828;
