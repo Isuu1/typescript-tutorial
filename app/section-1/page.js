@@ -7,6 +7,7 @@ import { darcula } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import CodePlayground from "../components/CodePlayground/CodePlayground";
 
 import { sectionsData } from "../sectionsData";
+import NextButtonExtended from "../components/Buttons/NextButtonExtended/NextButtonExtended";
 
 const codeString1 = `let name = Batman;
 name = Chris; 
@@ -155,7 +156,10 @@ export default function Section() {
       </section>
       <h2>Check different types in playgroud below. Have fun!</h2>
       <CodePlayground />
-      <NextButton sectionId={2} />
+      <NextButtonExtended
+        sectionId={2}
+        nextSectionTitle={sectionsData[1].sectionTitle}
+      />
     </div>
   );
 }

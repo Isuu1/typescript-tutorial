@@ -6,7 +6,7 @@ import React from "react";
 //Icons
 import { FaArrowRight } from "react-icons/fa6";
 
-const BackButton = ({ sectionId }) => {
+const NextButton = ({ sectionId }) => {
   //Use router to change URL for next section on button click
   const router = useRouter();
 
@@ -21,4 +21,4 @@ const BackButton = ({ sectionId }) => {
   );
 };
 
-export default BackButton;
+export default NextButton;
