@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import styles from "@/app/components/SectionContainer/SectionContainer.module.scss";
 import Link from "next/link";
 
-const SectionContainer = ({ title, section, children }) => {
+const SectionContainer = ({ title, sectionId, children }) => {
   const [isSectionCompleted, setIsSectionCompleted] = useState(false);
 
   return (
@@ -15,7 +15,7 @@ const SectionContainer = ({ title, section, children }) => {
         </div>
       )}
       <div>
-        <Link href={`/section-${section}`}>
+        <Link href={`/section-${sectionId}`}>
           <h3 className={styles.sectionContainer__title}>{title}</h3>
           <h4>In this section</h4>
           {children}

@@ -1,5 +1,7 @@
 import styles from "@/app/Home.module.scss";
 import SectionContainer from "./components/SectionContainer/SectionContainer";
+//Data
+import { sectionsData } from "./sectionsData";
 
 export default function Home() {
   return (
@@ -42,8 +44,8 @@ export default function Home() {
       </ul>
       <div className={styles.home__sections}>
         <SectionContainer
-          title="Section 1 - Getting started"
-          section={1}
+          title={sectionsData[0].sectionTitle}
+          sectionId={sectionsData[0].sectionId}
         >
           <ul>
             <li>Why Typescript and what it is</li>
@@ -52,8 +54,8 @@ export default function Home() {
           </ul>
         </SectionContainer>
         <SectionContainer
-          title="Section 2 - Variables and Type Annotations in TypeScript"
-          section={2}
+          title={sectionsData[1].sectionTitle}
+          sectionId={sectionsData[1].sectionId}
         >
           <ul>
             <li>Declaring Variables with Type Annotations</li>

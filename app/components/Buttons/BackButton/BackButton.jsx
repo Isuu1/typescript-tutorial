@@ -3,12 +3,16 @@
 import { usePathname, useRouter } from "next/navigation";
 import React from "react";
 
+//Icons
+import { FaArrowLeft } from "react-icons/fa6";
+
 const BackButton = () => {
   const router = useRouter();
   const pathname = usePathname();
 
   return (
-    <button onClick={() => router.back()}>
+    <button className="flex-center" onClick={() => router.back()}>
+      <FaArrowLeft />
       {pathname === "/section-1"
         ? "Back to home"
         : "Previous section"}

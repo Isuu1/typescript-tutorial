@@ -24,12 +24,24 @@ button {
   color: #fff;
   font-size: 1.1rem;
   cursor: pointer;
+  transition: all 0.3s;
+}
+button:hover {
+  background: #fff;
+  color: #000;
 }
 
 .section {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  line-height: 2.2rem !important;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .headline {
@@ -49,10 +61,6 @@ button {
   border-width: 2px 0 2px 0;
   border-style: solid;
   border-color: #af2c2c;
-}
-
-.section {
-  line-height: 2.2rem !important;
 }
 
 .page {

@@ -6,6 +6,8 @@ import SyntaxHighlighter from "react-syntax-highlighter";
 import { darcula } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import CodePlayground from "../components/CodePlayground/CodePlayground";
 
+import { sectionsData } from "../sectionsData";
+
 const codeString1 = `let name = Batman;
 name = Chris; 
 name = 43242678`;
@@ -29,7 +31,7 @@ export default function Section() {
       <div className="page__header">
         <BackButton />
         <h2>Section 1 - Getting started</h2>
-        <NextButton />
+        <NextButton sectionId={sectionsData[1].sectionId} />
       </div>
       <h2>What is Typescript</h2>
       <p>
@@ -153,7 +155,7 @@ export default function Section() {
       </section>
       <h2>Check different types in playgroud below. Have fun!</h2>
       <CodePlayground />
-      <NextButton />
+      <NextButton sectionId={2} />
     </div>
   );
 }
