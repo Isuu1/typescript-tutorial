@@ -3,6 +3,9 @@ import NextButton from "../components/Buttons/NextButton/NextButton";
 
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { darcula } from "react-syntax-highlighter/dist/esm/styles/hljs";
+import NextButtonExtended from "../components/Buttons/NextButtonExtended/NextButtonExtended";
+
+import { sectionsData } from "../sectionsData";
 
 const codeString1 = `let score: number = 95.5;         // A number value
 let isAvailable: boolean = false; // A boolean value
@@ -28,7 +31,7 @@ export default function Section() {
         <h2>
           Section 2 - Variables and Type Annotations in TypeScript
         </h2>
-        <NextButton />
+        <NextButton sectionId={sectionsData[2].sectionId} />
       </div>
       <h2>Basic Types in Typescript</h2>
       <ul>
@@ -150,6 +153,10 @@ export default function Section() {
       >
         {codeString4}
       </SyntaxHighlighter>
+      <NextButtonExtended
+        sectionId={3}
+        nextSectionTitle={sectionsData[2].sectionTitle}
+      />
     </div>
   );
 }

@@ -4,6 +4,7 @@ import SectionContainer from "./components/SectionContainer/SectionContainer";
 import { sectionsData } from "./sectionsData";
 
 export default function Home() {
+  console.log("Sections data", sectionsData.length);
   return (
     <main className={`page ${styles.home}`}>
       <h2 className="headline">Welcome to Typescript tutorial</h2>

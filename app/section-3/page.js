@@ -83,7 +83,6 @@ export default function Section() {
       <div className="page__header">
         <BackButton />
         <h2>Section 3 - Functions in TypeScript</h2>
-        <NextButton sectionId={sectionsData[1].sectionId} />
       </div>
       <h2>Function Declaration with Type Annotations</h2>
       <p>

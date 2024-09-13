@@ -1,5 +1,6 @@
 "use client";
 
+import { sectionsData } from "@/app/sectionsData";
 import { useRouter } from "next/navigation";
 import React from "react";
 
@@ -9,6 +10,9 @@ import { FaArrowRight } from "react-icons/fa6";
 const NextButton = ({ sectionId }) => {
   //Use router to change URL for next section on button click
   const router = useRouter();
+
+  const currentSessionId = sectionId - 1;
+  console.log(currentSessionId);
 
   return (
     <button
